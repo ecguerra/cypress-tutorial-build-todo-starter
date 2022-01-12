@@ -1,6 +1,6 @@
 describe('input form', ()=>{
     beforeEach(()=>{
-        cy.visit('/')
+        cy.seedAndVisit([])
     })
 
     it('focuses input on load', ()=>{

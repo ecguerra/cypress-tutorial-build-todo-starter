@@ -1,3 +1,13 @@
+Cypress.Commands.add('seedAndVisit', (seedData = 'fixture:todos')=>{
+    cy.server()
+    cy.route('GET','/api/todos', seedData) // save data in a fixture to easily access
+    cy.visit('/') // visit AFTER preconfig
+})
+
+
+
+
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
