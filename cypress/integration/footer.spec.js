@@ -19,7 +19,7 @@ describe('Footer', ()=>{
               .should('contain', '3 todos left')
         })
 
-        it.only('handles filter links', ()=>{
+        it('handles filter links', ()=>{
             const filters = [                   // for when there's very similar code with different parameters
                 {link: 'Active', expectedLength: 3},
                 {link: 'Completed', expectedLength: 1},
